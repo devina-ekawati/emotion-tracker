@@ -1,5 +1,7 @@
 # EmoTracker
 
+![](demo/emo_tracker_demo.gif)
+
 Tracking emotion is a way to monitor and measure our mental state. This will help us to understand how we feel and could be a huge help to improve our mental healthiness. EmoTracker is an app to help you to track your emotions on a daily basis easily. To track your emotions, you can just simply capture your face and let the app recognize your emotion! The app is powered by machine learning to recognize emotion from our face automatically.
 
 ## Features
