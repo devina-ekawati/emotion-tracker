@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorSecondDarkest">
+
+    <TextView
+        android:id="@+id/itemEmotionDateText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/happiness"
+        android:gravity="center"
+        android:lineSpacingExtra="2.5dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.143"
+        tools:text="THU\nJUN 30\n14:00" />
+
+    <!--Colored view dividers-->
+    <View
+        android:layout_width="1.3dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/itemEmotionDateText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0.7dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itemEmotionDateText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/itemEmotionImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemEmotionDateText"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintStart_toEndOf="@id/itemEmotionDateText"
+        app:layout_constraintTop_toTopOf="@id/itemEmotionDateText">
+
+        <TextView
+            android:id="@+id/emoticon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|end"
+            android:textSize="18dp"
+            android:text="😊" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/itemFlightDepartureLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/itemEmotionImage"
+        app:layout_constraintDimensionRatio="W,5:1"
+        app:layout_constraintStart_toEndOf="@id/itemEmotionImage"
+        app:layout_constraintTop_toTopOf="@id/itemEmotionImage">
+
+        <TextView
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/itemEmotionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/example_5_text_grey"
+            android:textSize="16sp"
+            tools:text="Happy" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
