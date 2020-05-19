@@ -32,4 +32,4 @@ We believe there are a lot of room for improvement to develop the model:
 - Re-train the model using other algorithm
 - Use higher quality dataset
 
-To understand further about how we train and evaluate the model, you can see it here.
+To understand further about how we train and evaluate the model, you can see it [here](model/Emotion_Classifiation_TFLite.ipynb)
